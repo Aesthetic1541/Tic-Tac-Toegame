@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #d4f1f4;
+    text-align: center;
+}
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem; 
+    color: #189ab4; 
+    text-align: center; 
+    margin-top: 20px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    font-size: 10vmin;
+    color: #05445e;
+    background-color: #ffffc7;
+    cursor: pointer;
+}
+
+#reset-btn {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    background-color:#32b3a6;
+    color: white;
+    border: none;    
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 2px;   
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#reset-btn:hover {
+    background-color: #189ab4;
+}
+
+.new-btn {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    background-color:#32b3a6;
+    color: white;
+    border: none;    
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 2px;   
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.new-btn:hover {
+    background-color: #189ab4;
+}
+
+#msg { 
+    font-family: 'Arial', sans-serif; 
+    font-size: 4rem;
+    color: #189ab4; 
+    text-align: center; 
+    margin: 20px 0;
+    font-weight: bold; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.msg-container{
+    height: 100vmin;
+}
+
+.hide{
+    display: none;
+}
+
+
+@media (max-width: 768px) { 
+    .game { 
+        width: 80vmin; 
+        height: 80vmin; 
+    }
+    .box { 
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 8vmin; 
+    }
+    #msg {
+        font-size: 3rem;
+    }
+    .new-btn,
+     #reset-btn {
+        font-size: 1rem;
+        padding: 8px 16px;          
+    } 
+}
+
+@media (max-width: 480px) { 
+    .game { 
+        width: 90vmin;
+        height: 90vmin;
+    } 
+    .box { 
+        height: 24vmin;
+        width: 24vmin;
+        font-size: 6vmin;
+    } 
+    #msg { 
+        font-size: 2.5rem;
+    } 
+    .new-btn, 
+    #reset-btn { 
+        font-size: 0.9rem;
+        padding: 6px 12px; 
+    }
+}
